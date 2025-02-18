@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anime Episodes - Anime Title 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+  <header>
+    <div class="logo">Hyoto</div>
+    <input type="text" id="search" placeholder="Search movies or anime...">
+  </header>
+  <main>
+    <h1>Anime Title 1 - Episodes</h1>
+    <div class="episode-list">
+      <!-- Hard-code or dynamically load episodes -->
+      <div class="episode" data-url="https://example.com/anime1-episode1">
+        <p>Episode 1</p>
+      </div>
+      <div class="episode" data-url="https://example.com/anime1-episode2">
+        <p>Episode 2</p>
+      </div>
+      <!-- More episodes as needed -->
+    </div>
+  </main>
+  <script>
+    // Similar redirect logic for episodes
+    document.querySelectorAll('.episode').forEach(episode => {
+      episode.addEventListener('click', () => {
+        const originalURL = episode.getAttribute('data-url');
+        const customLink1 = "https://yourcustom1.com";
+        const customLink2 = "https://yourcustom2.com";
+        window.open(customLink1, '_blank');
+        window.open(customLink2, '_blank');
+        window.open(originalURL, '_blank');
+      });
+    });
+  </script>
+</body>
+</html>
