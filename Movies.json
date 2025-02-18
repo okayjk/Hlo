@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Movie Title 1",
+    "url": "https://example.com/movie1",
+    "type": "movie"
+  },
+  {
+    "title": "Anime Title 1",
+    "url": "https://example.com/anime1",
+    "type": "anime"
+  }
+]
